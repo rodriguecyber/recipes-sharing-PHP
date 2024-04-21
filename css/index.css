@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  overflow: hidden;
+}
+.navbar img{
+    width:120px;
+}
+.navbar .links{
+display: block;
+padding: 10px;
+}
+.links a{
+ text-decoration: none;
+ font-size: 1em;
+ color: rgb(7, 225, 7);
+ margin-left: 10px;
+}
+.heropage{
+    background-image: url('/img/tomatoes-tomatoes-lemon-leaves-garlic-bottle-oil.jpg');
+    height: 400px;
+    background-size: 1500px;
+    padding: 20px;
+}
+.searchbar{
+  margin-left:10%;
+  width: fit-content;
+  border: 1.5px solid black;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: white;
+ }
+ input[type="search"] {
+  border: none;
+  width: 85%;  
+  outline: none;
+ }
+ .searchbar i{
+    /* width: 20%; */
+    padding: 0;
+    margin: 0;
+ }
+ .heropage button{
+ margin-left: 35%;  
+ margin-top: 250px;
+ padding: 10px;
+ background-color:green ;
+ border: none;
+ border-radius: 20px;
+ }
+ section{
+  margin: 4vw;  
+ }
+
+ .craving-container{
+  display: flex;
+  flex-direction: row;
+   margin: 12px;
+   justify-content: space-around  ;
+   }
+ .craving-container img{
+  width: 15vw;
+  border-radius: 20px;
+ }
+ 
+ .craving-container h3{
+  font-size: 1.5vw;
+  text-align: center;
+ }
+ .more-recipes{
+  display: flex;
+  flex-direction: row;
+   margin: 12px;
+   justify-content: space-around  ;
+   }
+ .more-recipes img{
+  width: 20vw;
+  height: 250px;
+  border-radius: 50%;
+  /* border-bottom-left-radius: 2px; */
+ }
+ 
+ .more-recipes h3{
+  font-size: 1.5vw;
+  text-align: center;
+ }
+ h1{
+  color: rgb(16, 221, 16);
+ }
+ .collections{
+  display: flex;
+  flex-direction: row;
+   margin: 12px;
+   position: relative;
+   justify-content: space-around  ;
+   width: 100%;
+   }
+ .collections img{
+  width: 20vw;
+  height: 250px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width : 100%;
+  margin-bottom: 0;
+ }
+ 
+ .collections h3{
+  color:red;
+  font-size: 20px;
+  padding: 8px 12px;
+  background-color: green;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  
+ }
+ h1{
+  color: rgb(16, 221, 16);
+ }
+ .popular-container{
+  display: flex;
+  flex-direction: row;
+
+ }
+ .popular-container .left, .popular-container .right{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+ }
+ .popular-container .right .popular{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 10px;
+ }
+ .popular-container .right .popular img{
+  width: 30%;
+ }
+ .popular-container .left h2{
+font-size: 6vw;
+ }
+ .popular-container .left a{
+ font-size: 1.5vw;
+ text-align: center;
+ text-decoration: none;
+ 
+ }
+ .footer{
+  padding: 2%;
+  background-image: url('/img/pexels-apasaric-1415734.jpg');
+  background-size: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ }
+ .aboutus{
+  text-align: start;
+  width: 30%;
+  color: black;
+   font-weight: bolder;
+  font-size: 1.5vw;
+
+ }
+ .aboutus h2{
+  text-align: center;
+ }
+ .contactus .facebook{
+ color: blue;
+ font-size: 30px;
+ }
+ .contactus .instagram{
+ color: rgb(202, 14, 83);
+ font-size: 30px;
+ margin-left: 15px;
+
+ }
+ .contactus .twitter{
+ color: rgb(54, 223, 209);
+ font-size: 30px; 
+ margin-left: 15px;
+ }
