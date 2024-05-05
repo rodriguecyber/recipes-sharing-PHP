@@ -1,0 +1,103 @@
+.view{
+    background-color: rgb(228, 237, 244);
+    padding: 20px;
+
+    
+}
+.view h2{
+    color: blue;
+    font-size: larger;
+    text-align: center;
+}
+.view .recipe{
+display: flex;
+flex-direction: row;
+justify-content: center;
+width: 60%;
+margin: 0 auto;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: white;
+    padding: 20px;
+
+}
+.details img{
+    width: 200px;
+    height: 150px;
+    margin: 0 auto;
+
+}
+.like i{
+ font-size: 2vw;
+ color: blue;margin: 6px;
+}
+.view .comments{
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(224, 216, 216);
+}
+.comments .comment{
+    margin: 20px;
+ text-align: start;
+
+}
+.comment *{
+    margin: 0;
+}
+.comment h6{
+    font-size: 1.7vw;
+}
+.like{
+    display: flex;
+}
+.new , .update{
+    background-color: rgb(5, 4, 4,0.70);
+    position: absolute;
+    left: 20%;
+    top: 5%;
+    width: 60%;
+    /* height: 60%; */
+    border: 3px wheat solid;
+    border-radius: 5px;
+    display: none;
+}
+.update{
+    display: none;
+}
+.new h4, .update h4{
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+}
+.new form, .update form{
+    border: 1px solid wheat;
+    padding: 2%;
+    margin: 12px auto;
+    width: 60%;
+   
+
+
+}
+.new form input, .update form input{
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 60%;
+    margin:10px 20%;
+    background-color: white;
+   
+
+}
+.new form button, .update form button{
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 30%;
+    margin:10px 40%;
+    
+}

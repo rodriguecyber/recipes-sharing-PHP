@@ -1,0 +1,85 @@
+.profile{
+   display: flex;
+   flex-direction: row;
+   margin: 40px auto;
+   justify-content: space-around;
+}
+.profile img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
+.names{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 60px ;
+    text-align: center;
+
+}
+.names *{
+    margin-top: 5px;
+}
+.names h5{
+    font-size: 20px;
+}
+
+.fa-facebook{
+    color: rgb(34, 34, 176);
+    font-size: 30px;
+}
+.fa-instagram{
+    color: rgb(198, 16, 119);
+    font-size: 30px;
+}
+.fa-twitter{
+    color: rgb(22, 210, 231);
+    font-size: 30px;
+}
+.edit{
+    /* margin-left: 30%; */
+}
+
+.edit a{
+    padding: 12px;
+    background-color: aqua;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top:30px;
+   
+}
+.paragraph{
+    margin: 40px auto;
+    width: 80%;
+
+}
+.stat{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    margin: 20px auto;
+    justify-content: space-around;
+}
+.stat div{
+border: 2px solid black;
+padding: 10px 50px;
+text-align: center;
+}
+.posted{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+
+}
+.posted1{
+    width: 200px;
+    
+}
+h4{
+    margin-left: 5%;
+    font-size: 2vw;
+}
+.posted1 img{
+    width: 100%;
+}

@@ -24,7 +24,7 @@ padding: 10px;
  margin-left: 10px;
 }
 .heropage{
-    background-image: url('/img/tomatoes-tomatoes-lemon-leaves-garlic-bottle-oil.jpg');
+    background-image: url('../../recipes-sharing-PHP/img/tomatoes-tomatoes-lemon-leaves-garlic-bottle-oil.jpg');
     height: 400px;
     background-size: 1500px;
     padding: 20px;
@@ -82,7 +82,7 @@ padding: 10px;
    }
  .more-recipes img{
   width: 20vw;
-  height: 250px;
+  height: 20vw;
   border-radius: 50%;
   /* border-bottom-left-radius: 2px; */
  }
@@ -92,14 +92,14 @@ padding: 10px;
   text-align: center;
  }
  h1{
-  color: rgb(16, 221, 16);
+  color: rgb(21, 36, 21);
  }
  .collections{
   display: flex;
   flex-direction: row;
    margin: 12px;
    position: relative;
-   justify-content: space-around  ;
+   justify-content: space-around;
    width: 100%;
    }
  .collections img{
@@ -154,7 +154,7 @@ font-size: 6vw;
  }
  .footer{
   padding: 2%;
-  background-image: url('/img/pexels-apasaric-1415734.jpg');
+  background-image: url('../../recipes-sharing-PHP/img/pexels-apasaric-1415734.jpg');
   background-size: 100%;
   display: flex;
   flex-direction: row;

@@ -15,16 +15,16 @@ $result = $conn->query($sql);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../recipes-sharing-PHP/css/index.css">
-    <link rel="stylesheet" href="./../recipes-sharing-PHP/css/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../../recipes-sharing-PHP/css/index.css">
+    <link rel="stylesheet" href="../../recipes-sharing-PHP/css/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.min.css">
     <title>Recipe-Sharing</title>
 </head>
 <body>
     <div class="navbar">
-        <img src="./../recipes-sharing-PHP/img/reaL update.png" alt="Logo">
+        <img src="../../recipes-sharing-PHP/img/reaL update.png" alt="Logo">
         <div class="links">
-            <a href="../recipes-sharing-PHP/admin/signup.html">Sign  Up </a>
-            <a href="../recipes-sharing-PHP/admin/login.html">Login</a>
+            <a href="../recipes-sharing-PHP/admin/progile.php">profile</a>
+            <a href="../recipes-sharing-PHP/admin/login.html">Logout</a>
         </div>
         </div>
         <div class="heropage">
@@ -32,27 +32,30 @@ $result = $conn->query($sql);
                 <input type="search" placeholder="Search Recipe">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            <button><a href="../recipes-sharing-PHP/admin/login.html" style='text-decoration:none; color:white'>Add Recipe</a></button>
+            <button><a href="../admin/manage.html" style='text-decoration:none; color:white'>Add Recipe</a></button>
             </div>
             <section>
             <h1>Current Chiefs</h1>
             <div class="craving-container">
-             <div class="craving">
-                <img src="/img/IMG_7085.jpg" alt="carving image">
-                <h3>Recipes Name</h3>
-             </div>
-             <div class="craving">
-                <img src="/img/IMG_7085.jpg" alt="carving image">
-                <h3>Recipes Name</h3>
-             </div>
-             <div class="craving">
-                <img src="/img/IMG_7085.jpg" alt="carving image">
-                <h3>Recipes Name</h3>
-             </div>
-             <div class="craving">
-                <img src="/img/IMG_7085.jpg" alt="carving image">
-                <h3>Recipes Name</h3>
-             </div>
+            <?php
+            $sql = "SELECT * FROM users";
+            $user = $conn->query($sql);
+                $data = array();
+                if ($user->num_rows > 0) {
+                    while ($row = $user->fetch_assoc()) {
+                        $users[] = $row;
+                    }
+                }
+                // Assuming $data contains the fetched data
+         foreach ($users as $row) {
+            echo " <div class='craving'>";
+           echo "<img src='../".basename($row['image'])."' alt='carving image'>";
+           echo  "<h3>".$row['name']."</h3>";
+           echo "</div>";
+            }
+
+                
+                ?>
             </div>
             </section>
             <section>
@@ -68,7 +71,7 @@ $result = $conn->query($sql);
                 // Assuming $data contains the fetched data
          foreach ($data as $row) {
             echo " <div class='recipes'>";
-           echo "<img src='./".basename($row['image'])."' alt='carving image'>";
+           echo "<img src='../".basename($row['image'])."' alt='carving image'>";
            echo  "<h3>".$row['name']."</h3>";
            echo "</div>";
             }
@@ -79,7 +82,6 @@ $result = $conn->query($sql);
             </div>
             </section>
             <section>
-                <!-- displaying collections -->
             <h1>COLLECTIONS</h1>
             <div class="collections">
              <div class="recipes">
@@ -98,7 +100,6 @@ $result = $conn->query($sql);
             </div>
             </section>
             <section>
-                <!-- recipes with most likes -->
                 <div class="popular-container">
                     <div class="left">
                         <h2>Popular Recipe of the Month!</h2>
@@ -123,7 +124,6 @@ $result = $conn->query($sql);
                     </div>
                 </div>
             </section>
-            <!-- footer -->
             <div class="footer">
                 <div class="aboutus">
                     <h2>About us</h2>

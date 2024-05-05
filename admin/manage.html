@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- importimg important files -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../recipes-sharing-PHP/css/index.css">
+    <link rel="stylesheet" href="../../recipes-sharing-PHP/css/manage.css">
+    <link rel="stylesheet" href="../../recipes-sharing-PHP/css/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../recipes-sharing-PHP/script/Integration.js"></script>
+    <title>manage</title>
+</head>
+<body>
+    <!-- nav bar -->
+    <div class="navbar">
+        <img src="../../recipes-sharing-PHP/img/reaL update.png" alt="Logo">
+        <div class="links">
+            <a href="/admin/signup.html">Recipes</a>
+            <a href="./../admin/login.html">Home</a>
+        </div>
+        </div>
+        <!-- view clicked recipes and comments -->
+    <div class="view">
+        <h2>Recipe name</h2>
+        <div class="recipe">
+        <div class="details">
+        <img src="../../recipes-sharing-PHP/img/IMG_7085.jpg" alt="recipe">
+         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+             when an unknown printer took a galley of type and scrambled it to make a type 
+             specimen book. It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.
+             </p>
+             <div class="like">
+                <p>0</p>
+                <i class="fa fa-thumbs-up"></i>
+             </div>
+        </div>
+        <div class="comments">
+         <div class="comment">
+          <h6>Rwigara</h6>
+          <p>looking good</p>
+         </div>
+        </div>
+        </div>
+    </div>
+    <button onclick="hide()">NEW</button>
+
+    <!-- creating new recipe -->
+    <div class="new" id="new">
+        <h4>New Recipe</h4>
+        <form action="##" method="post" id="newRecipeForm" enctype="multipart/form-data">
+            <input type="text" placeholder="Title" name="title">
+            <input type="text" placeholder="category" name="category">
+            <input type="text" placeholder="Description" name="desc">
+            <input type="file" name="image">
+            <div class="add ingeredients"></div>
+            <button id="newRecipe">Add</button>
+        </form>
+    </div>
+    <!-- updating recipe -->
+    <div class="update">
+        <h4>Update Recipe</h4>
+        <form action="" id="updateRecipe">
+            <input type="text" placeholder="Title" name="title1">
+            <input type="text" placeholder="category" name="cat1">
+            <input type="text" placeholder="Description" name="desc1">
+            <div class="add ingeredients"></div>
+             <button>UPDATE</button>
+         </form>
+    </div>
+    <script>
+        const hide=()=> document.getElementById('new').style.display = 'block';
+    </script>
+</body>
+</html>
